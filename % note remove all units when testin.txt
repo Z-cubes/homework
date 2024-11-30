@@ -1,0 +1,42 @@
+% note: remove all units when testing code 
+% attempt on describing stakeholder welfare, EW (start by trying to just find for year = 1939, t = 1)
+I1(1) = 1991 cfs
+u1(1) = 517 cfs
+
+% To decide which slope for given year calculate using the MAWS u1(1) is between
+% note: MAWS is not a fun of time MAWS(1) is i = 1 
+% for u1(1) = 517 cfs
+MAWSupper = MAWS(5) = 430 cfs
+MAWSlower = MAWS(6) = 520 cfs
+% note: upper is smaller because i am referring to the y axis and the slope is negative and MAWS is the x axis of the demand fun
+MVupper = MV(5) = 870 $/acre-ft
+MVlower = MV(6) = 510 $/acre-ft
+% therefor slope for t = 1 
+slope(1) = (MV(5) - MV(6)) / (MAWS(5) - MAWS(6)) 
+
+% find intercept, b by solving for upper or lower value 
+% rearrange and solve MV(5) = slope(1) * MAWS(5) + b 
+% ask henry about solve command 
+
+% If the annual flow, I1 is large enough to meet original targets, U1, stakeholder, EW welfare is measured by the consumer surplus
+% else, the targets cannot be met, the city and/or the farmers purchase the deficit from other sources at a price equal to the value of their demand function at the water amount actually supplied by the watershed. In these deficit years, the stakeholder welfare, EW is measured by the consumer surplus less the cost of purchasing the deficit.
+% note: might need a command for if Dfst(t) exits for that year, t 
+if Q3(t) >= 0.5 * I1(t)
+
+
+
+
+
+	
+ 
+	
+
+
+
+
+
+
+
+
+
+
